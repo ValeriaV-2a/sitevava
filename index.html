@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Diálogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Bem-vindo ao Jogo!</h1>
+        <p>Clique no botão abaixo para começar.</p>
+        <button id="start-button" onclick="startGame()">Começar</button>
+    </div>
+    
+    <div id="game-container" style="display: none;">
+        <div id="dialogue-box">
+            <p id="dialogue-text">Bem-vindo ao jogo! Clique no botão abaixo para começar.</p>
+        </div>
+        <div id="choices-container">
+            <button id="choice1" class="choice-button" onclick="makeChoice(0)"></button>
+            <button id="choice2" class="choice-button" onclick="makeChoice(1)"></button>
+            <button id="choice3" class="choice-button" onclick="makeChoice(2)"></button>
+        </div>
+    </div>
+
+    <div id="hearts-container"></div>
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
