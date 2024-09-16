@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#hearts-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffeb3b; /* Amarelo */
+    border-radius: 50%;
+    opacity: 0.9;
+    z-index: 1;
+    transform: translateY(0);
+    animation: fall 1s forwards;
+}
+
+.confetti:nth-child(odd) {
+    background-color: #ff5722; /* Laranja */
+}
+
+.confetti:nth-child(even) {
+    background-color: #4caf50; /* Verde */
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+#start-screen h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#start-screen p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #e91e63; /* Rosa forte */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#start-button:hover {
+    background-color: #c2185b; /* Rosa escuro */
+}
+
+#game-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    border: 2px solid #000;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+#dialogue-box {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fce4ec; /* Rosa claro */
+}
+
+#dialogue-text {
+    font-size: 18px;
+}
+
+#choices-container {
+    margin-bottom: 20px;
+}
+
+.choice-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e91e63; /* Rosa forte */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.choice-button:hover {
+    background-color: #c2185b; /* Rosa escuro */
+}
+
+#reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f44336; /* Vermelho */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset-button:hover {
+    background-color: #e53935; /* Vermelho escuro */
+}
