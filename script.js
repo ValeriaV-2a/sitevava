@@ -52,29 +52,29 @@ const dialogues = [
         ]
     },
     {
-        text: "O dia passou muito rápido! Anoiteceu e você não sabe o caminho de volta para casa, o Sr. Lobo permite você dormir na casa dele, onde você quer dormir?
+        text: "O dia passou muito rápido! Anoiteceu e você não sabe o caminho de volta para casa, o Sr. Lobo permite você dormir na casa dele, onde você quer dormir?"
         choices: [
-            "Ignorar o horário e tentar descobrir o caminho para casa."
-            "Quarto de hóspedes."
+            "Ignorar o horário e tentar descobrir o caminho para casa.",
+            "Quarto de hóspedes.",
             "Banheiro."
         ],
         responses: [
-             "Péssima escolha! Você se perde na floresta e um animal te ataca. Volte para o início do jogo."
-             "O Sr. Lobo arruma o quarto para você."
+             "Péssima escolha! Você se perde na floresta e um animal te ataca. Volte para o início do jogo.",
+             "O Sr. Lobo arruma o quarto para você.",
              "Sr Lobo te acha esquisito, mas permite."
         ]
    },
    {
-        text: "Você acorda de madrugada com um barulho vindo do piso de baixo, o que você faz?
+        text: "Você acorda de madrugada com um barulho vindo do piso de baixo, o que você faz?"
         choices: [
-            "Que barulho?"
-            "Ignora e volta a dormir'
-            "Vai ver o que era"
+            "Que barulho?",
+            "Ignora e volta a dormir.",
+            "Vai ver o que era."
         ]
         responses: [
-            "Seja lá o que tinha lá embaixo, subiu as escadas e te atacou. Fim de jogo para você!"
-            "Você dorme bem e quando acorda no dia seguinte ele te ajuda a voltar para casa! Parabéns! Você fez um ótimo jogo!
-            "Havia um bicho lá embaixo, ele te atacou. Fim de jogo para você!"m
+            "Seja lá o que tinha lá embaixo, subiu as escadas e te atacou. Fim de jogo para você!",
+            "Você dorme bem e quando acorda no dia seguinte ele te ajuda a voltar para casa! Parabéns! Você fez um ótimo jogo!"
+            "Havia um bicho lá embaixo, ele te atacou. Fim de jogo para você!"
 
 
 let currentStep = 0;
